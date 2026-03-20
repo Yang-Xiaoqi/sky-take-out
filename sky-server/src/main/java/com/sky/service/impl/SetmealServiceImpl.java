@@ -85,6 +85,7 @@ public class SetmealServiceImpl implements SetmealService {
      */
     @Override
     public void deleteByIds(List<Long> ids) {
+        setmealDishMapper.deleteByIds(ids);
         setmealMapper.deleteByIds(ids);
     }
 
